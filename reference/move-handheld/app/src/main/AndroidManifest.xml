@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.pax.permission.PRINTER" />
+    <queries><package android:name="com.eft.positive" /><package android:name="uk.edge.move.loyalty.staging" /><package android:name="com.eft.positiveloyaltydemo" /></queries>
+    <uses-permission android:name="uk.edge.move.loyalty.staging.CONTEXT" />
+    <permission android:name="${applicationId}.TRADING_INTERNAL" android:protectionLevel="signature" />
+    <uses-permission android:name="${applicationId}.TRADING_INTERNAL" />
+    <application tools:replace="android:allowBackup,android:label" android:label="${moveAppLabel}" android:icon="@drawable/move_icon" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false" android:dataExtractionRules="@xml/data_extraction_rules" android:usesCleartextTraffic="false" android:supportsRtl="true">
+        <activity android:name=".HandheldActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+        <receiver android:name=".PositiveTransactionReceiver" android:exported="true">
+            <intent-filter><action android:name="com.eft.TRANSACTION_RESULT" /><action android:name="com.eft.TRANSACTION_ACK" /><action android:name="com.eft.TRANSACTION_STATUS" /></intent-filter>
+        </receiver>
+    </application>
+</manifest>

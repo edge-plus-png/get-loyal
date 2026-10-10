@@ -1,0 +1,45 @@
+{
+  "scope": "First single-terminal V1 test increment; shared backend and production launch incomplete",
+  "artifacts": {
+    "move-handheld-loyalty-v1-0.4.apk": "6914776ddc416ae4125e485b54ad019abba98f5eca566ec8e6ae0020e4538e34",
+    "move-loyalty-v1-independent-0.1.apk": "d5aff568f7bdf223ae7f9367cf58f44a1747e6657d9f48cc13999ab0b1c56ff4",
+    "move-loyalty-v1-demo-compatible-0.1.apk": "69fc3ca80595d5e128b561cdfc0946006ecf459d0704aa8a2a9e395a8de1a7d7"
+  },
+  "companionPackage": "com.eft.positiveloyaltydemo",
+  "companionVersion": "0.1-v1-pilot",
+  "companionVersionCode": 3,
+  "handheldPackage": "uk.edge.move.handheld.loyaltytest.staging",
+  "handheldVersion": "0.4-loyalty-v1",
+  "handheldVersionCode": 4,
+  "identityNote": "Demo-compatible test container only; independent package requires registration/invocation proof",
+  "independentArtifactNote": "Earlier inactive review build before final acknowledgement change; not for payment deployment",
+  "verification": {
+    "policyTests": 8,
+    "handheldJvmTests": 103,
+    "androidLedgerFixtureTests": 8,
+    "sharedSourceGuard": "6 files unchanged",
+    "companionLint": "passed",
+    "handheldReleaseLint": "passed",
+    "liveV1PaymentVerified": false
+  },
+  "data": "Terminal-local ledger, no cloud sync; raw tokens not stored",
+  "initialProgramme": {
+    "minimumMinor": 500,
+    "stampTarget": 5,
+    "rewardPercent": 10,
+    "enabled": true
+  },
+  "installedOn": "A920 0822879784",
+  "installationVerified": true,
+  "operatorUiVerified": {
+    "environment": "staging",
+    "merchant": "Grubs Up",
+    "location": "Bridgwater",
+    "device": "loyaly",
+    "actor": "Existing operator-authorised staff session; no role override",
+    "managementLaunch": "PASS via Move device settings",
+    "programmeSaved": "PASS: \u00a35 / 5 stamps / 10%",
+    "livePayment": "not dispatched by agent"
+  },
+  "fixtureRunnerRemoved": true
+}

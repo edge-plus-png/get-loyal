@@ -1,0 +1,31 @@
+{
+  "source": "/Users/kevinsmith/Documents/Projects/EPOS/Move Counter EdgeSpace",
+  "head": "bf6b5db",
+  "basis": "Explicit snapshot of dirty RC124 working sources; not claimed to be committed RC124. Copied unchanged.",
+  "files": [
+    {
+      "path": "domain/model/PosModels.kt",
+      "sha256": "9b27cd572c44ce369f7f6f1431fc6f97c3ba315e2d6fb89caddf8d85e20648ef"
+    },
+    {
+      "path": "domain/pricing/SelectionBar.kt",
+      "sha256": "35d39de0df97f27b3ad2ee99e53ff2e4ce364959c101840577478783bd26b09e"
+    },
+    {
+      "path": "domain/pricing/SelectionGroup.kt",
+      "sha256": "6941117d874ee5175ef19c119e59c042093c96e40cacf8314fa4d0cf42b60ef2"
+    },
+    {
+      "path": "domain/pricing/OrderRuleCalculations.kt",
+      "sha256": "c5409f7e7c1bbba534caf74f37e14fec82b2d86c71df109613f12042bfbe3763"
+    },
+    {
+      "path": "domain/pricing/ProductBuilderPricing.kt",
+      "sha256": "557ff270139716bebb3d041f98cdfa12660083d0d73c9a6e26e37d3303858190"
+    },
+    {
+      "path": "domain/pricing/MealDeals.kt",
+      "sha256": "f91bd07ce703d0dcbefd22a150c73da59ff20e411c0783bb9166d80c19d45713"
+    }
+  ]
+}
