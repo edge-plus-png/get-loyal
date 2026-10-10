@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<permission android:name="uk.edge.move.loyalty.staging.CONTEXT" android:protectionLevel="signature" />
+<application android:label="Move Loyalty V1" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false">
+<activity android:name="uk.edge.move.loyalty.MainActivity" android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
+<activity android:name="uk.edge.move.loyalty.PaymentActivity" android:exported="true" android:enabled="${loyaltyCallbacksEnabled}"><intent-filter><action android:name="com.plm.OPEN_APP"/><category android:name="android.intent.category.DEFAULT"/></intent-filter></activity>
+<receiver android:name="uk.edge.move.loyalty.ContextReceiver" android:exported="true" android:permission="uk.edge.move.loyalty.staging.CONTEXT"/>
+<receiver android:name="uk.edge.move.loyalty.NominationReceiver" android:exported="true" android:enabled="${loyaltyCallbacksEnabled}"><intent-filter android:priority="1000"><action android:name="com.nominateloyalty.confirm"/></intent-filter></receiver>
+</application></manifest>
